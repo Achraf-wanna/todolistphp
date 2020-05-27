@@ -1,0 +1,181 @@
+/* login START */
+.login {
+    padding: 0;
+}
+.login-image {
+    background-image: url("../images/login-background.jpg");
+    height: 100vh;
+    margin: 0;
+    filter: blur(1px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-info {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-60px, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+.login-info .btn-submit {
+    color: white;
+    width: 200px;
+    border: none;
+    margin-top: 20px;
+    background: #cc2b5e;
+    background: -webkit-linear-gradient(to right, #cc2b5e, #753a88);
+    background: linear-gradient(to right, #cc2b5e, #753a88);
+}
+
+/* login END */
+
+/* navbar START */
+
+.nav-brand {
+    color: #cc2b5e !important;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: #753a88 !important;
+    font-size: 18px;
+}
+
+/* navbar END */
+
+/* content START */
+.content {
+    margin-top: 80px;
+}
+/* content END */
+
+/* index START */
+.task input[type="checkbox"] {
+    display: none;
+}
+
+.task .taskLabel {
+    position: relative;
+    margin-left: 50px;
+}
+
+.task .taskLabel::before {
+    content: "";
+    background: url("../images/check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -30px;
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+.task input[type="checkbox"]:checked + .taskLabel::before {
+    transform: scale(1) rotateZ(0deg);
+}
+
+.task .taskLabel::after {
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -29.7px;
+    top: 0.4px;
+    border-radius: 50%;
+}
+
+.task a {
+    color: #dc3545;
+    position: absolute;
+    left: 250px;
+}
+
+.todolist .card-header {
+    position: relative;
+}
+
+.todolist .card-header .create-task-btn {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.todolist .card-header .create-task-btn {
+    position: absolute;
+    right: 50px;
+    background: none;
+    border: none;
+    color: white;
+}
+.todolist .card-header .edit-todolist-btn {
+    position: absolute;
+    right: 80px;
+    background: none;
+    border: none;
+    color: white;
+}
+.todolist .card-header .color-todolist-btn {
+    position: absolute;
+    right: 120px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.todolist .card-header .delete-todolist-btn {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #dc3545;
+}
+
+.todolist .card-body .task {
+    position: relative;
+}
+
+.todolist .card-body .task .edit-task-btn {
+    position: absolute;
+    right: 20px;
+    top: -2px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.todolist .modal-content {
+    color: black;
+}
+/* index END */
+
+/* profile START */
+.profile .info .card {
+    background: #cc2b5e;
+    background: -webkit-linear-gradient(to right, #cc2b5e, #753a88);
+    background: linear-gradient(to right, #cc2b5e, #753a88);
+    color: white;
+    border: none;
+}
+
+.profile .info .card .col-md-8 {
+    padding: 30px;
+}
+
+.profile .info .card .col-md-8 p label {
+    margin: 0 10px;
+}
+/* profile END */
+
+/* photo START */
